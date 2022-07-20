@@ -42,7 +42,6 @@ input[type="text"], input[type="search"], img {
     vertical-align: middle;
 }
 input[type="text"] {
-    background-color: initial;
     appearance: auto;
     box-sizing: border-box;
     border: initial;
