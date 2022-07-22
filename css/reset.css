@@ -38,7 +38,7 @@ a{
     display: block;
     clear: both;
 }
-input[type="text"], input[type="search"], img {
+input[type="text"], input[type="search"],input[type="radio"], img {
     vertical-align: middle;
 }
 input[type="text"] {
