@@ -45,7 +45,7 @@ section .box:first-child{margin-top: 0;}
 .request_list .col1{height: 109px;background: #f2f4f6;}
 .request_list .strong{font-weight: bold;font-size: 16px;}
 .request_list .strong p{font-size: 10px; color: #2ab570;}
-.request_list .strong .do_area {margin-top: 5px;}
+.request_list .strong .do_area {margin-top: 5px;cursor: pointer;}
 .request_list .strong .do_area span{display: block;}
 .request_list .strong .do_area span:nth-child(2){text-align: right;margin-top: 29px;}
 .request_list .list_box:nth-child(1),.request_list .list_box:nth-child(3){border-right: none;}
@@ -154,7 +154,8 @@ section .box:first-child{margin-top: 0;}
 
 .inner940{font-size: 12px;max-width: 940px;margin: 0 auto;}
 .inner940 section{margin: 11px 0 30px;}
-.faq_header{height: 65px;width: 940px;margin: 0 auto; font-size: 12px;display: flex;justify-content: space-between;line-height: 76px;border-bottom: 1px solid #e9e9e9;}
+.faq_header_wrap{border-bottom: 1px solid #e9e9e9;}
+.faq_header{height: 65px;width: 940px;margin: 0 auto; font-size: 12px;display: flex;justify-content: space-between;line-height: 76px;}
 .header_left{display: flex;}
 .faq_header h1{margin:0 15px 0 0;line-height: 68px;}
 .faq_header h1 a{display: inline-block; height: 100%;}
@@ -213,6 +214,7 @@ section .box:first-child{margin-top: 0;}
 .pagination .next_area{display: flex;}
 
 /* FAQ style */
+.faq .tabs{margin-top: 11px;}
 .contents_wrap{margin-top: 5px;}
 .title_wrap{height: 132px;margin-top: 5px;}
 .title_area{display: flex;justify-content: space-between;;border-bottom: 1px solid #eff0f0;padding: 20px 20px 13px;align-items: center;}
@@ -364,9 +366,10 @@ input[type='radio']:checked{width: 19px;height: 19px;}
 .software_download_contents p{padding-top: 10px;}
 
 .download_link span{color: #2ab570;cursor: pointer;display: inline-block;margin: 35px 0 27px;}
+.download_link span:hover{text-decoration: underline;}
 .download_link span:before{background: url(../img/dowload_hover.png)no-repeat;display: inline-block;width: 11px;height: 11px;content: "";margin-right: 8px;vertical-align: middle;}
 
 .edit_btn_wrap{text-align: right;}
-.edit_btn_wrap .btn{width: 40px;height: 32px;border: 1px solid #b6bdc4;display: inline-block;}
+.edit_btn_wrap .btn{width: 40px;height: 32px;border: 1px solid #b6bdc4;display: inline-block;cursor: pointer;}
 .edit_btn_wrap .edit{background: url(../img/edit_icon.png) no-repeat;background-position: center; display: inline-block;margin-right: 3px;}
 .edit_btn_wrap .close{background: url(../img/close_icon.png)no-repeat;display: inline-block;background-position: center;}
