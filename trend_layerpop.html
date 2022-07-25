@@ -62,7 +62,7 @@
                 <div class="right_btn">
                     <div class="copy_popup">
                         <span class="copy btn"></span>
-                        <div class="open">
+                        <div class="balloon">
                             <select name="depth1" id="korean">
                                 <option value="korean">카테고리 1depth: 한글(영문)</option>
                             </select>
@@ -84,7 +84,7 @@
                     <div class="comment_top">
                         <span class="name">이지은</span>
                         <span class="date">2015.11.24 13:28</span>
-                        <span class="comment_cancel">X</span>
+                        <span class="comment_cancel"></span>
                     </div>
                     <div class="comment_bottom">
                         <p>블루투스 4.1을 적용해 끊김 없는 꺠끗한 음향을 구현하며 완충 시 통화와 음악재생은 최대 5~7시간, 대기시간은 150시간을 지원한다.</p>
@@ -113,18 +113,44 @@
                     </div>
                 </div>
             </div>
-            <div class="writing_area">
-                <p class="name">신주영</p>
-                <textarea name="comments" cols="30" rows="10"></textarea>
-                <div class="save_btn">SAVE</div>
-            </div>
         </div>
-        <div class="trend_btn">
-            <span class="write btn">글쓰기</span>
-            <span class="prev btn">이전</span>
-            <span class="next btn">다음</span>
-            <span class="ham btn">전체보기</span>
+        <div class="writing_area">
+            <p class="name">신주영</p>
+            <textarea name="comments" cols="30" rows="10"></textarea>
+            <div class="save_btn">SAVE</div>
+        </div>
+        <div class="trend_btn trend_btn2">
+            <span class="write btn"></span>
+            <div class="prev_next_btn">
+                <span class="prev btn"></span>
+                <span class="next btn"></span>
+            </div>
+            <span class="ham btn"></span>
         </div>
     </div>
+    <script src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
+    <script>
+        $(function(){
+            $(".balloon").copy_popup({
+                position:{
+                    my: "center bottom",
+                    at: "center top-10",
+                    collision:"none"
+                },
+                close: function(event,ui){
+                    ui.copy_popup.hover(
+                        function(){
+                            $(this).stop(true).fadeTo(400,1);
+                        },
+                        function (){
+                            $(this).fadeOut("400",function(){
+                                $(this).remove();
+                            })
+                        }
+                    )
+                }
+            })
+        })
+    </script>
 </body>
 </html>
