@@ -37,7 +37,7 @@ section .box:first-child{margin-top: 0;}
 .info .security{background: url(../img/security.png)no-repeat;display: inline-block;width: 10px;height: 11px;margin-left: 15px;}
 
 .inquiry_box{display: flex;}
-.inquiry_box a{color: #fdfdfd;display: inline-block;width: 79px;height: 95px;background: #2ab570;text-align: center;}
+.inquiry_box a{color: #fdfdfd;display: inline-block;width: 79px;height: 95px;background: #2ab570;text-align: center;border: 1px solid transparent;}
 .inquiry_box a:hover{background: rgba(42, 181, 112,.6);}
 .inquiry_box .inquiry::before{background: url( ../img/inquiry.png)no-repeat;display: block;content: '';width: 27px;height: 29px; margin: 22px auto 15px;}
 .inquiry_box .authority{border-left: 1px solid #6acb9b;border-right: 1px solid #6acb9b;}
