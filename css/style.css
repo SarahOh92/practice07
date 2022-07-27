@@ -275,7 +275,7 @@ h2.it_trend{margin-top: 22px; padding: 19px 0;}
 .trend_list_wrap li:nth-child(5) a .img_area .img{background: url(../img/trend_listimg5.png)no-repeat top -4px left -41px;}
 
 .text_wrap{line-height: 1.7;}
-.trend_tit{font-size: 18px;font-weight: 600;}
+.trend_tit{font-size: 18px;font-weight: 600;width: 600px;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;}
 .trend_tit .sub_num{font-size: 12px;font-weight: 600;color: #2ab570;}
 .trend_tit_info{color: #949494;}
 .trend_tit_info span::after{content: '|';margin: 0 10px;}
