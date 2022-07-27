@@ -29,6 +29,7 @@ section .box:first-child{margin-top: 0;}
 /* section1 */
 .section1 .name{font-size: 13px;font-weight: bold;border-bottom: 1px solid #e4e4e4;padding: 24px 20px;}
 .section1 .info{padding: 10px 20px 17px;line-height: 1.5;}
+.section1 .info p{text-overflow: ellipsis;overflow: hidden;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;word-break: break-word;}
 .info .settings_wrap{text-align: right; margin-top: 3px;}
 .info .settings_wrap span{cursor: pointer;}
 .info .settings{background: url(../img/settings.png)no-repeat;display: inline-block;width: 12px;height: 12px;}
