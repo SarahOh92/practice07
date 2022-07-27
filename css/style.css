@@ -52,7 +52,7 @@ section .box:first-child{margin-top: 0;}
 .request_list .list_box:nth-child(1),.request_list .list_box:nth-child(3){border-right: none;}
 .request_list .list_box:nth-child(2) .text_area{font-size: 13px;margin-top: 13px;line-height: 1.7;}
 .request_list .list_box:nth-child(2) .text_area div{display: flex;justify-content: space-between;}
-.request_list .list_box:nth-child(2) span{display: block;}
+.request_list .list_box:nth-child(2) span{display: block;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;}
 .request_list .list_box .text_area div{cursor: pointer;}
 .request_list .list_box .text_area div:hover{color: #2ab570;}
 .request_list .col2{height: 35px;padding: 13px 20px;border-top: none;cursor: pointer;}
