@@ -127,12 +127,12 @@ section .box:first-child{margin-top: 0;}
 .project_box{border: 1px solid #cfd3d8;}
 .section3 .sub_header{margin-bottom: 19px;}
 .trend_box .img_wrap{width: 278px; height: 165px;position: relative;overflow: hidden;margin-bottom: 17px;cursor: pointer;}
+.trend_box .img_wrap:hover .img_content .txt{color: #2ab570;text-decoration: underline;}
 .trend_box .img_wrap>div{position: absolute;}
 .trend_box .img_wrap .img_area{background: url(../img/trend_img.png) no-repeat;width: 100%;height: 100%;background-position: top 10% left 71%;background-size: inherit;}
 .trend_box .img_wrap .img_content{height: 60px;width: 100%; background: rgba(0,0,0,.5);bottom: 0;padding: 15px;line-height: 1.3;}
 .trend_box .img_wrap .img_content .img_category{color: #b6bdc4;}
 .trend_box .img_wrap .img_content .txt{font-size: 14px;font-weight: 600; color: #fff;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;}
-.trend_box .img_wrap .img_content .txt:hover{color: #2ab570;text-decoration: underline;}
 
 .trend_box .news_list{display: flex;justify-content: space-between;line-height: 1;}
 .trend_box .news_list:first-child{margin-bottom: 13px;}
@@ -263,6 +263,7 @@ section .box:first-child{margin-top: 0;}
 
 .faq_bottom{height: 70px;border-top: 1px solid #636970;border-bottom: 1px solid #e8e9ea;background: #f2f4f6;display: flex;justify-content: flex-end;padding: 20px;align-items: center;}
 .faq_bottom .button_wrap .button{width: 75px;height: 30px;border: 1px solid #b6bdc4;display: inline-block;color: #70859a;text-align: center;line-height: 28px;background: #fff;cursor: pointer;margin-left: 5px;font-weight: 600;}
+.faq_bottom .button_wrap .button:hover{color: #2ab570;border-color: #2ab570;}
 .faq_bottom .button_wrap .query{width: 80px;}
 
 /* IT Trends style css */
@@ -317,7 +318,7 @@ h2.it_trend{margin-top: 22px; padding: 19px 0;}
 .trend_btn .prev_next_btn .prev{background: url(../img/prev_btn.png)no-repeat center;}
 .trend_btn .prev_next_btn .prev:hover{background: url(../img/prev_btn_hover_green.png)no-repeat center;z-index: 5;}
 .trend_btn .prev_next_btn .next{background: url(../img/next_btn.png)no-repeat center;margin-left: -1px;}
-.trend_btn .prev_next_btn .next:hover{background: url(../img/next_btn_hover_green.png)cover center;}
+.trend_btn .prev_next_btn .next:hover{background: url(../img/next_btn_hover_green.png)no-repeat center;}
 .ham{background: url(../img/ham_btn.png)no-repeat center;width: 40px; height: 30px;}
 .ham:hover{background: url(../img/ham_hover.png)no-repeat center;}
 
@@ -330,7 +331,7 @@ h2.it_trend{margin-top: 22px; padding: 19px 0;}
 .trends_contents_wrap .trend_tit_info{display: inline-block;}
 
 .trends_contents_wrap .contents_bottom{margin-top: 25px;display: flex;justify-content: space-between;border-bottom: 1px solid #d3d9e0;padding-bottom: 10px;}
-.trends_contents_wrap .contents_bottom .btn{height: 30px; line-height: 30px;text-align: center;display: inline-block;}
+.trends_contents_wrap .contents_bottom .btn{height: 30px; line-height: 30px;text-align: center;display: inline-block;cursor: pointer;}
 .contents_bottom .left_btn span{width: 65px;border: 1px solid #dadee1;}
 .contents_bottom .left_btn .comments{margin-right: 5px;}
 .contents_bottom .left_btn .comments::before{content: '';background: url(../img/comment_icon.png)no-repeat;width: 16px;height: 13px;display: inline-block;vertical-align: middle;margin-right: 5px;}
