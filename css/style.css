@@ -12,6 +12,7 @@ input[type="text"]{padding: 10px;font-size: 12px;}
 input[type="radio"],
 input[type='radio']:checked{width: 19px;height: 19px;accent-color: #6c8298;}
 textarea{padding: 10px;font-size: 12px;line-height: 1.7;}
+.btn:hover{border-color: #2ab570;}
 
 /* header */
 header{height: 60px; line-height: 34px;display: flex;}
@@ -242,17 +243,16 @@ section .box:first-child{margin-top: 0;}
 .pagination{display: flex;margin-top: 28px;justify-content: center;line-height: 28px;text-align: center; }
 .pagination .btn{width: 35px;height: 33px;border: 1px solid #d6dbe0;cursor: pointer;margin-left: -1px;}
 .pagination .page_list .btn:hover{background: #899aac; color: #fff;border-color: #899aac;}
-.pagination .prev_area{display: flex;}
-.btn_first{background: url(../img/go_to_first.png)no-repeat;width: 11px;height: 10px;display: block;background-position: center;}
+.pagination .prev_area,.pagination .next_area{display: flex;}
+.pagination .btn_first{background: url(../img/go_to_first.png)no-repeat;display: block;background-position: center;margin-left: 1px;}
 .btn_first:hover{background: url(../img/go_to_first_hover.png)no-repeat;background-position: center;border-color: #899aac;background-color: #899aac;}
 .btn_prev{background: url(../img/prev_btn.png)no-repeat;width: 6px;height: 10px;display: block;background-position: center;}
 .btn_prev:hover{background: url(../img/prev_btn_hover.png)no-repeat;background-position: center;border-color: #899aac;background-color: #899aac;}
-.btn_next{background: url(../img/next_btn.png)no-repeat;width: 6px;height: 10px;display: block;background-position: center;}
+.pagination .btn_next{background: url(../img/next_btn.png)no-repeat;display: block;background-position: center;margin-left: 0;}
 .btn_next:hover{background: url(../img/next_btn_hover.png)no-repeat;background-position: center;border-color: #899aac;background-color: #899aac;}
 .btn_last{background: url(../img/go_to_end.png)no-repeat;width: 11px;height: 10px;display: block;background-position: center;}
 .btn_last:hover{background: url(../img/go_to_end_hover.png)no-repeat;background-color: #899aac;background-position: center;border-color: #899aac;}
 .pagination .page_list{display: flex;margin: 0 9px;}
-.pagination .next_area{display: flex;}
 
 /* FAQ style */
 .faq .tabs{margin-top: 11px;}
@@ -301,7 +301,7 @@ h2.it_trend{margin-top: 22px; padding: 19px 0;}
 .it_search::after{content: '';display: block;background: url(../img/trend_search.png) no-repeat;width: 16px;height: 16px;position: absolute;top: 7px;right: 12px;cursor: pointer;} 
 .trend_contents_wrap .trend_list_wrap li {border-bottom: 1px solid #e9e9e9;}
 .trend_contents_wrap .trend_list_wrap li:hover{background: #eee;}
-.trend_list_wrap li a{display: flex;padding: 30px 20px;}
+.trend_list_wrap li a{display: flex;padding: 29px 20px;}
 .trend_list_wrap li a .img_area{width: 200px;height: 140px;overflow: hidden;margin-right: 27px;}
 .trend_list_wrap li a .img_area .img{width: 294px;height: 194px;}
 .trend_list_wrap li:nth-child(1) a .img_area .img{background: url(../img/trend_listimg1.png)no-repeat top -33px left -45px;}
@@ -310,15 +310,17 @@ h2.it_trend{margin-top: 22px; padding: 19px 0;}
 .trend_list_wrap li:nth-child(4) a .img_area .img{background: url(../img/trend_listimg4.png)no-repeat top -89px left -68px;}
 .trend_list_wrap li:nth-child(5) a .img_area .img{background: url(../img/trend_listimg5.png)no-repeat top -4px left -41px;}
 
+.it_trend_wrap .text_top{line-height: 1.55;margin-top: -5px;}
+.it_trend_wrap .trend_tit{text-overflow: ellipsis;overflow: hidden;white-space: nowrap;}
 .text_wrap{line-height: 1.8;}
 .text_wrap .categorize{width: 600px;}
 .trend_tit_wrap{display: flex;align-items: center;}
 .trend_tit{font-size: 18px;font-weight: 600;max-width: 600px;}
 .text_wrap  .sub_num{font-size: 12px;font-weight: 600;color: #2ab570;}
-.trend_tit_info{color: #949494;}
+.trend_tit_info{color: #949494; line-height: 1.7;}
 .trend_tit_info span::after{content: '|';margin: 0 10px;}
 
-.text_bottom{margin-top: 15px;width: 650px;}
+.text_bottom{margin-top: 7px;width: 650px;}
 .text_bottom p{text-overflow: ellipsis;overflow: hidden;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;word-break: break-word;}
 .text_bottom p:last-child{margin-top: 9px;}
 
@@ -350,10 +352,16 @@ h2.it_trend{margin-top: 22px; padding: 19px 0;}
 
 .trends_contents_wrap .contents_bottom{margin-top: 25px;display: flex;justify-content: space-between;border-bottom: 1px solid #d3d9e0;padding-bottom: 10px;}
 .trends_contents_wrap .contents_bottom .btn{height: 30px; line-height: 30px;text-align: center;display: inline-block;cursor: pointer;}
-.contents_bottom .left_btn span{width: 65px;border: 1px solid #dadee1;}
+.contents_bottom .left_btn{display: flex;}
+.contents_bottom .left_btn .checkbox_wrap{width: 65px;height: 30px; border: 1px solid #dadee1;text-align: center;}
+.contents_bottom .left_btn .checkbox_wrap:hover{border-color: #2ab570;}
 .contents_bottom .left_btn .comments{margin-right: 5px;}
 .contents_bottom .left_btn .comments::before{content: '';background: url(../img/comment_icon.png)no-repeat;width: 16px;height: 13px;display: inline-block;vertical-align: middle;margin-right: 5px;}
-.contents_bottom .left_btn .like::before{content: '';background: url(../img/heart.png)no-repeat;width: 15px;height: 12px;display: inline-block;margin-right: 5px;vertical-align: middle;}
+.contents_bottom .left_btn input[type="checkbox"]{display: none;width: 15px;height: 12px;width: 65px;border: 1px solid #dadee1;height: 30px;text-align: center;}
+.contents_bottom .left_btn label{line-height: 25px;display: block;cursor: pointer;}
+.contents_bottom .left_btn label::before{content: '';background: url(../img/heart_gray.png)no-repeat;width: 15px;height: 12px;display: inline-block;margin-right: 5px;vertical-align: middle;}
+.contents_bottom .left_btn input:checked + label::before{content: '';background: url(../img/heart.png)no-repeat;display: inline-block;}
+
 .contents_bottom .right_btn{display: flex;position: relative;}
 .contents_bottom .right_btn .btn{width: 40px;border: 1px solid #b6bdc4;margin-left: 5px;cursor: pointer;}
 .contents_bottom .right_btn .btn:hover{border-color: #2ab570;color: #2ab570;}
@@ -384,7 +392,7 @@ h2.it_trend{margin-top: 22px; padding: 19px 0;}
 
 .writing_area{background: #f2f4f6;border-bottom: 1px solid #636970;padding: 26px 20px;display: flex;align-items: center;}
 .writing_area textarea{width: 757px;height: 58px;border: 1px solid #c9c9c9;border-right: none;}
-.writing_area .name{margin-top: 0;padding-right: 18px;}
+.writing_area .name{margin-top: 0;padding-right: 18px;width:53px;}
 .writing_area .save_btn{width: 85px;height: 80px;background: #899aac;color: #fff;font-weight: 600;text-align: center;line-height: 80px;cursor: pointer;}
 
 .trend_btn2{justify-content: flex-end;padding-top: 13px;margin: 0 20px 30px 0;}
@@ -418,7 +426,6 @@ h2.it_trend{margin-top: 22px; padding: 19px 0;}
 .upload_file_area .folder_btn:hover{background: url(../img/folder_hover.png)no-repeat center;border-color: #2ab570;}
 .checkbox_area{display: flex;}
 .checkbox_area input[type="checkbox"]{width: 18px;height: 18px;cursor: pointer;vertical-align: middle;display: none;}
-/* .checkbox_area input[type="checkbox"]:checked{accent-color: #6c8298;} */
 .checkbox_area label{margin-right: 20px;cursor: pointer;}
 .checkbox_area label:before{background: url(../img/checkbox.png)no-repeat;content: '';width: 18px;height: 18px;display: inline-block;vertical-align: middle;padding-right: 5px;}
 .checkbox_area input:checked + label::before{background: url(../img/checkbox_check.png) no-repeat;}
@@ -445,7 +452,8 @@ h2.it_trend{margin-top: 22px; padding: 19px 0;}
 
 .edit_btn_wrap{text-align: right;}
 .edit_btn_wrap .btn{width: 40px;height: 32px;border: 1px solid #b6bdc4;display: inline-block;cursor: pointer;}
+.edit_btn_wrap .btn:hover{border-color: #2ab570;}
 .edit_btn_wrap .edit{background: url(../img/edit_icon.png) no-repeat;background-position: center; display: inline-block;margin-right: 3px;}
-.edit_btn_wrap .edit:hover{background: url(../img/edit_icon_hover.png)no-repeat center;border-color: #2ab570;}
+.edit_btn_wrap .edit:hover{background: url(../img/edit_icon_hover.png)no-repeat center;}
 .edit_btn_wrap .close{background: url(../img/close_icon.png)no-repeat;display: inline-block;background-position: center;}
-.edit_btn_wrap .close:hover{background: url(../img/close_icon_hover.png)no-repeat center;border-color: #2ab570;}
+.edit_btn_wrap .close:hover{background: url(../img/close_icon_hover.png)no-repeat center;}
