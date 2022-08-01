@@ -224,24 +224,23 @@ section .box:first-child{margin-top: 0;}
 
 /* tabs */
 .tabs{display: flex;margin-top: 10px;border-bottom: 1px solid #2ab570}
-.tabs li {flex:1;line-height: 47px;}
+.tabs li {flex:1;line-height: 48px;}
 .tabs a {display: block;text-align: center;color: #70859a;font-weight: 600;border: 1px solid #dcdee1;border-bottom-color: transparent;border-right: none; background: #f2f4f6}
 .tabs a:hover{background: rgba(42, 181, 112,.6);color: #fff;}
 .tabs li:last-child a{border-right: 1px solid #dcdee1;}
 .tabs li.active a{background: #2ab570;color: #fff;border-color: #2ab570;}
-/* .tabs li.active {color: #fff;} */
 
 .tab_list{display: flex;flex-wrap: wrap;padding: 14px 10px 11px 20px; border-bottom: 1px solid #2ab570;}
 .tab_list li{width: 182px;line-height: 2.65;}
-.tab_list li a{color: #70859a;font-weight: 600;padding-left: 15px;}
+.tab_list li a{color: #70859a;font-weight: 600;padding-left: 15px;display: inline-block;}
 .tab_list li:nth-child(1) a,.tab_list li:nth-child(6) a{padding-left: 0;}
+.tab_list li:active a{color: #2ab570;}
 .tab_list li a:hover{color: #2ab570;}
 .tab_list li a::before{content: '-';display: inline-block;margin-right: 5px;}
 
 /* tbl_list */
 .tbl_list_area{margin-top: 18px;}
-.tbl_list_area .article_list li{border-bottom: 1px solid #e9e9e9;}
-.article_list li {display: flex;padding: 14px 20px;}
+.article_list li{border-bottom: 1px solid #e9e9e9;display: flex;padding: 14px 20px;}
 .categorize{width: 24%; color: #70859a;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;}
 .article_tit{width: 70%;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;}
 .article_tit:hover{color: #2ab570;text-decoration: underline;}
@@ -308,16 +307,16 @@ h2.it_trend{margin-top: 24px; padding: 20px 0 16px;}
 .it_search{position: relative;}
 .it_search input{width: 259px; height: 29px;border: 1px solid #b6bdc4;}
 .it_search::after{content: '';display: block;background: url(../img/trend_search.png) no-repeat;width: 16px;height: 16px;position: absolute;top: 7px;right: 12px;cursor: pointer;} 
-.trend_contents_wrap .trend_list_wrap li {border-bottom: 1px solid #e9e9e9;}
-.trend_contents_wrap .trend_list_wrap li:hover{background: #eee;}
-.trend_list_wrap li a{display: flex;padding: 29px 20px 23px;}
-.trend_list_wrap li a .img_area{width: 200px;height: 140px;overflow: hidden;margin: 2px 30px 0 0;}
-.trend_list_wrap li a .img_area .img{width: 294px;height: 194px;}
-.trend_list_wrap li:nth-child(1) a .img_area .img{background: url(../img/trend_listimg1.png)no-repeat top -33px left -45px;}
-.trend_list_wrap li:nth-child(2) a .img_area .img{background: url(../img/trend_listimg2.png)no-repeat top -33px left -45px;}
-.trend_list_wrap li:nth-child(3) a .img_area .img{background: url(../img/trend_listimg3.png)no-repeat top -4px left -3px;}
-.trend_list_wrap li:nth-child(4) a .img_area .img{background: url(../img/trend_listimg4.png)no-repeat top -89px left -68px;}
-.trend_list_wrap li:nth-child(5) a .img_area .img{background: url(../img/trend_listimg5.png)no-repeat top -4px left -41px;}
+.trend_contents_wrap .article_list li{display: block;padding: 0;}
+.trend_contents_wrap .article_list li:hover{background: #eee;}
+.trend_contents_wrap .article_list li a{display: flex;padding: 29px 20px 23px;}
+.trend_contents_wrap .article_list li a .img_area{width: 200px;height: 140px;overflow: hidden;margin: 2px 30px 0 0;}
+.trend_contents_wrap .article_list li a .img_area .img{width: 294px;height: 194px;}
+.trend_contents_wrap .article_list li:nth-child(1) a .img_area .img{background: url(../img/trend_listimg1.png)no-repeat top -33px left -45px;}
+.trend_contents_wrap .article_list li:nth-child(2) a .img_area .img{background: url(../img/trend_listimg2.png)no-repeat top -33px left -45px;}
+.trend_contents_wrap .article_list li:nth-child(3) a .img_area .img{background: url(../img/trend_listimg3.png)no-repeat top -4px left -3px;}
+.trend_contents_wrap .article_list li:nth-child(4) a .img_area .img{background: url(../img/trend_listimg4.png)no-repeat top -89px left -68px;}
+.trend_contents_wrap .article_list li:nth-child(5) a .img_area .img{background: url(../img/trend_listimg5.png)no-repeat top -4px left -41px;}
 
 .it_trend_wrap .text_top{line-height: 1.55;margin-top: -5px;}
 .it_trend_wrap .tit{text-overflow: ellipsis;overflow: hidden;white-space: nowrap;}
