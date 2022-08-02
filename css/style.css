@@ -385,8 +385,8 @@ h2.it_trend{margin-top: 24px; padding: 20px 0 16px;}
 .contents_bottom .right_btn .popup_overlay select{width: 308px;height: 30px;border-color: #b6bdc4;margin-bottom: 10px;font-size: 12px; color: #6c8298;} 
 .contents_bottom .right_btn .popup_overlay .button_wrap{text-align: right;}
 .contents_bottom .right_btn .popup_overlay .button{width: 60px;height: 26px;margin-left: 5px;color: #fff;display: inline-block;line-height: 26px;text-align: center;cursor: pointer;}
-.cancel{background: #c2c8ce;}
-.save{background: #2ab570;}
+.cancel{background: #c2c8ce;border: none;}
+.save{background: #2ab570;border: none;}
 
 .comments_wrap .comment{padding: 20px 0 15px;border-bottom: 1px solid #eff0f0;}
 .comment .comment_top{display: flex;align-items: center;}
@@ -442,13 +442,12 @@ h2.it_trend{margin-top: 24px; padding: 20px 0 16px;}
 .btn_wrap .save:hover{background: rgba(42, 181, 112,.6);}
 
 /* IT Policy Stlye CSS */
-.itpolicy_wrap h2{padding-bottom: 15px;}
+.itpolicy_wrap h2,.software_download_wrap h2{padding-bottom: 15px;}
 .policy_contents_wrap{padding: 20px;border-bottom: 1px solid #636970;margin-bottom: 20px;}
 .policy_contents_wrap h4{font-size: 18px;padding: 10px 0 30px;}
 .policy_content{padding-bottom: 18px;}
 
 /* Software Download CSS */
-.software_download_wrap h2{padding-bottom: 15px;}
 .software_download_contents{padding: 30px 20px 5px;line-height: 1.8;border-bottom: 1px solid #636970;}
 .software_download_contents p{padding-top: 10px;}
 
