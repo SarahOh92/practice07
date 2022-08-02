@@ -4,7 +4,7 @@
 h2{font-size: 30px;margin-left: -1px;}
 h3{font-size: 14px;}
 section{margin-right: 20px;}
-.box{margin-top: 10px;}
+.box{margin-top: 10px;box-shadow: 0 3px 3px #f5f5f5;}
 .en{font-family: 'Roboto',sans-serif;}
 .gray_box{background: #f2f4f6;border:1px solid #e0e3e6}
 .sub_header{display: flex;justify-content: space-between;align-items: center;}
