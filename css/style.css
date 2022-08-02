@@ -292,8 +292,8 @@ section .box:first-child{margin-top: 0;}
 /* IT Trends style css */
 h2.it_trend{margin-top: 24px; padding: 20px 0 16px;}
 
-.it_trend_wrap .tabs li,.layerpop_wrap .tabs li{flex: 0;}
-.it_trend_wrap .tabs li a,.layerpop_wrap .tabs li a{width: 123px;}
+.it_trend_wrap .tabs li,.layerpop_wrap .tabs li,.software_download_wrap .tabs li{flex: 0;}
+.it_trend_wrap .tabs li a,.layerpop_wrap .tabs li a,.software_download_wrap .tabs li a{width: 123px;}
 
 /* it_search_wrap */
 .it_search_wrap{height: 50px; padding: 10px 20px;align-items: center;border-bottom: 1px solid #d3d9e0;}
