@@ -184,9 +184,9 @@ section .box:first-child{margin-top: 0;}
 .download_box .download_list{padding-right: 2px;height: 164px;overflow: auto;}
 .download_box .download_list li:last-child{margin-bottom: 2px;}
 .download_box .download_list li{margin-bottom: 21px;display: flex;}
-.download_box .download_list li .content{width: 150px;}
+.download_box .download_list li:hover .content{text-decoration: none;}
+.download_box .download_list li .content{width: 150px;color: #6c8298;font-weight: 700;}
 .download_box .download_list li .icon_wrap{margin-right: 15px;}
-.download_box .download_list li:hover .content{color: #222;text-decoration: none;}
 .download_box .download_list li a{display: inline-block;}
 .preview{background: url(../img/preview.png)no-repeat;width: 11px;height: 12px;display: inline-block;}
 .preview:hover{background: url(../img/preview_hover.png)no-repeat;}
