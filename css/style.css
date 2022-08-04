@@ -447,9 +447,9 @@ h2.it_trend{margin-top: 24px; padding: 20px 0 16px;}
 
 /* IT Policy Stlye CSS */
 .itpolicy_wrap h2,.software_download_wrap h2{padding-bottom: 16px;}
-.policy_contents_wrap{padding: 20px;border-bottom: 1px solid #636970;margin-bottom: 20px;}
-.policy_contents_wrap h4{font-size: 18px;padding: 10px 0 30px;}
-.policy_content{padding-bottom: 18px;}
+.itpolicy_wrap .contents_area{margin-bottom: 20px; padding-bottom: 10px;}
+.itpolicy_wrap .contents_area h4{font-size: 18px;padding: 10px 0 30px;}
+.itpolicy_wrap .contents_area .contents{padding-bottom: 18px;}
 
 /* Software Download CSS */
 .contents_area{padding: 20px 20px 10px;line-height: 1.95;border-bottom: 1px solid #636970;}
