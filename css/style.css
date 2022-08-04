@@ -91,7 +91,7 @@ section .box:first-child{margin-top: 0;}
 .my_box_wrap .device{border-right: 1px solid #e0e3e6;}
 
 /* section 2 */
-.section2{width: 321px;box-shadow: 0 3px 3px #f5f5f5;}
+.section2{width: 321px;box-shadow: 0 3px #f5f5f5;}
 .section2,.trend_box{border: 1px solid #cfd3d8;border-top: 2px solid #636970;margin-bottom: 3px;}
 .section2 .section_top{padding: 20px 20px 15px;}
 .help_area{display: flex; justify-content: space-between;align-items: center;margin: 1px 0 29px;} 
