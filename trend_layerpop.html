@@ -27,16 +27,16 @@
             <li><a href="#tab2">IT Trend</a></li>
             <li><a href="#tab3">APP 소개</a></li>
         </ul>
-        <div class="title_wrap clearfix">
+        <div class="title_wrap">
             <div class="title_area">
-                <div class="text_wrap fl">
+                <div class="text_wrap">
                     <p class="categorize">IT Trend > APP 소개</p>
                     <div class="tit_wrap">
                         <p class="tit">더 스마트한 비스비 팝스프리 블루투스 이어폰 리버전Ⅱ</p>
                         <span class="sub_num">(27)</span>
                     </div>
                 </div>
-                <div class="trend_btn fr">
+                <div class="btn_wrap">
                     <a href="#" class="write btn"></a>
                     <div class="prev_next_btn">
                         <a href="#" class="prev btn"></a>
@@ -62,7 +62,7 @@
                     스마트하게 완성도를 높였다 이전에 리뷰했던 가성비 좋은 비스비 팝스프리 블루투스 이어폰이 더 똑똑해진 리버전 Ⅱ로 돌아왔다.
                 </p>
             </div>
-            <div class="contents_bottom">
+            <div class="end">
                 <div class="left_btn">
                     <div class="checkbox_wrap btn">
                         <input type="checkbox">
@@ -73,8 +73,8 @@
                         <label for="like" class="like">6</label>
                     </div>
                 </div>
-                <div class="right_btn">
-                    <a href="#" class="copy btn"></a>
+                <div class="btn_wrap">
+                    <button class="copy_btn btn"></button>
                     <div class="popup_overlay">
                         <div class="popup_content">
                             <select name="depth1" id="korean">
@@ -84,13 +84,13 @@
                                 <option value="english">카테고리 2depth: 한글(영문)</option>
                             </select>
                             <div class="button_wrap">
-                                <a href="#" class="button cancel">CANCEL</a>
-                                <a href="#" class="button save">SAVE</a>
+                                <button class="button cancel">CANCEL</button>
+                                <button class="button save">SAVE</button>
                             </div>
                         </div>
                     </div>
-                    <a href="#" class="reply btn">답글</a>
-                    <a href="#" class="cancel1 btn">취소</a>
+                    <button href="#" class="edit btn"></button>
+                    <button href="#" class="close btn"></button>
                 </div>
             </div>
             <div class="comments_wrap">
@@ -133,7 +133,7 @@
             <textarea name="comments" cols="30" rows="10" style="resize: none;"></textarea>
             <button class="save_btn">SAVE</button>
         </div>
-        <div class="trend_btn trend_btn2">
+        <div class="btn_wrap right">
             <a href="#" class="write btn"></a>
             <div class="prev_next_btn">
                 <a href="#" class="prev btn"></a>
@@ -144,7 +144,7 @@
     </div>
     <script src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
     <script>
-        $(".copy").on("click", function(){
+        $(".copy_btn").on("click", function(){
           $(".popup_overlay,.popup_content").addClass("active");
         });
 
