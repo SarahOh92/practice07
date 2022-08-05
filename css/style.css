@@ -197,12 +197,11 @@ section .box:first-child{margin-top: 0;}
 .download_box .download_list li:hover .content{text-decoration: none;}
 .download_box .download_list li .content{width: 157px;color: #6c8298;font-weight: 700;letter-spacing: .5px;}
 .download_box .download_list li .icon_wrap{margin-right: 15px;}
-.download_box .download_list li a{display: inline-block;}
-.preview{background: url(../img/preview.png)no-repeat;width: 11px;height: 12px;display: inline-block;}
+.download_box .download_list li a{display: inline-block; width: 11px;background-repeat: no-repeat;}
+.preview{background: url(../img/preview.png);height: 12px;}
 .preview:hover{background: url(../img/preview_hover.png)no-repeat;}
-.download{background: url(../img/dowload.png)no-repeat;width: 11px;height: 11px;display: inline-block;margin-left: 10px;}
+.download{background: url(../img/dowload.png);height: 11px;margin-left: 10px;}
 .download:hover{background: url(../img/dowload_hover.png)no-repeat;}
-
 
 /* faq2depth.html style */
 
@@ -447,8 +446,7 @@ h2.it_trend{margin-top: 24px; padding: 20px 0 16px;}
 .checkbox_area input:checked + label::before{background: url(../img/checkbox_check.png) no-repeat;}
 
 .form_write .button_wrap{margin: 20px auto;text-align: center;}
-.form_write .button_wrap .button{width: 100px;height: 40px;line-height: 40px;}
-.form_write .button_wrap .cancel{margin-right: 6px;}
+.form_write .button_wrap .button{width: 100px;height: 40px;line-height: 40px;margin-right: 5px;}
 
 /* IT Policy Stlye CSS */
 .itpolicy_wrap h2,.software_download_wrap h2{padding-bottom: 16px;}
